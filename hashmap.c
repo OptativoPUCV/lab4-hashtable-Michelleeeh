@@ -47,14 +47,14 @@ void insertMap(HashMap * map, char * key, void * value) {
         if(is_equal(map->buckets[posicion]->key,key)) {
             map->buckets[posicion]->value = value;
             return;
-        } 
+        }  
     }
     map->buckets[posicion] = createPair(key,value);
     map->size++;*/
-
 }
 
 void enlarge(HashMap * map) {
+    /*if(map==NULL) return;
     enlarge_called = 1; //no borrar (testing purposes)
     Pair ** buckets = map->buckets;
     long capacity = map->capacity;
@@ -65,13 +65,9 @@ void enlarge(HashMap * map) {
     for (long i = 0; i < capacity; i++) {
         if (buckets[i] != NULL) {
             insertMap(map,buckets[i]->key,buckets[i]->value);
-          
         } 
-    }
-    free(buckets);
-  
-
-
+    } 
+    free(buckets);*/
 }
 
 
