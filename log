@@ -85,3 +85,16 @@ hashmap.c:129:5: error: expected expression before ‘}’ token
       |     ^
 Compilation failed
 d244877
+Thu 25 Apr 2024 01:08:19 AM UTC: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:126:84: error: expected ‘)’ before ‘{’ token
+  126 |       if(map->buckets[map->current]!=NULL && map->buckets[map->current]->key!=NULL {
+      |         ~                                                                          ^
+hashmap.c:132:5: error: expected expression before ‘}’ token
+  132 |     }
+      |     ^
+Compilation failed
+42c22a7
