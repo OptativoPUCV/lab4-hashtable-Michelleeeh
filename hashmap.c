@@ -49,7 +49,7 @@ void insertMap(HashMap * map, char * key, void * value) {
         posicion = (posicion+1)%map->capacity;
     }
     Pair* nuevo = createPair(key,value);
-    map->buckets[posicion] = createPair(key,value);
+    map->buckets[posicion] = nuevo;
     map->size++;
 }
 
