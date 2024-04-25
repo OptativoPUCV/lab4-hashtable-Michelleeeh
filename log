@@ -15,3 +15,14 @@ Wed 24 Apr 2024 06:42:38 PM UTC:
  tests:  1|5
 total_score: 10/70
 ceaa182
+Thu 25 Apr 2024 12:53:52 AM UTC: 
+ hashmap.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:51:10: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+   51 |    Pair* nuevo = createPair(key,value);
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d2c1afe
