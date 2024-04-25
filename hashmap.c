@@ -119,6 +119,7 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
+  
     if(map==NULL) return NULL;
     map->current++;
   
@@ -130,5 +131,5 @@ Pair * nextMap(HashMap * map) {
       
       
     }
-    return bucket[2]->value;
+    return NULL;
 }
