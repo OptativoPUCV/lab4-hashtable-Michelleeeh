@@ -26,3 +26,14 @@ hashmap.c:51:10: error: unused variable ‘nuevo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d2c1afe
+Thu 25 Apr 2024 12:54:22 AM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:51:11: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+   51 |     Pair* nuevo = createPair(key,value);
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+eab86cd

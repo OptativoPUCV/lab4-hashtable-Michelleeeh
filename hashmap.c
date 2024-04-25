@@ -48,13 +48,13 @@ void insertMap(HashMap * map, char * key, void * value) {
         }
         posicion = (posicion+1)%map->capacity;
     }
-   Pair* nuevo = createPair(key,value);
+    Pair* nuevo = createPair(key,value);
     map->buckets[posicion] = createPair(key,value);
     map->size++;
 }
 
 void enlarge(HashMap * map) {
-    /*if(map==NULL) return;
+    if(map==NULL) return;
     enlarge_called = 1; //no borrar (testing purposes)
     Pair ** buckets = map->buckets;
     long capacity = map->capacity;
@@ -67,7 +67,7 @@ void enlarge(HashMap * map) {
             insertMap(map,buckets[i]->key,buckets[i]->value);
         } 
     } 
-    free(buckets);*/
+    free(buckets);
 }
 
 
