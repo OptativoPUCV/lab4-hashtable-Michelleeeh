@@ -98,3 +98,24 @@ hashmap.c:132:5: error: expected expression before ‘}’ token
       |     ^
 Compilation failed
 42c22a7
+Thu 25 Apr 2024 01:09:01 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:126:84: error: expected ‘)’ before ‘{’ token
+  126 |       if(map->buckets[map->current]!=NULL && map->buckets[map->current]->key!=NULL {
+      |         ~                                                                          ^
+hashmap.c:132:5: error: expected expression before ‘}’ token
+  132 |     }
+      |     ^
+hashmap.c:133:12: error: ‘bucket’ undeclared (first use in this function)
+  133 |     return bucket[2]->value;
+      |            ^~~~~~
+hashmap.c:133:12: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:134:1: error: control reaches end of non-void function [-Werror=return-type]
+  134 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+cacac1f
